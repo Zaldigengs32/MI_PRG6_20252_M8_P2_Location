@@ -44,7 +44,7 @@ export default function AboutScreen() {
     const cameraRef = useRef(null);
 
     const NIM_USER = "0320240040";
-    const BASE_URL = "http://192.168.1.5:8080/api/mahasiswa";
+    const BASE_URL = "http://10.1.9.195:8080/api/mahasiswa";
 
     useEffect(() => {
         fetchMahasiswa();

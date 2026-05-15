@@ -24,7 +24,7 @@ export default function LoginScreen() {
 
   const { login } = useContext(AuthContext);
 
-  const BASE_URL = "http://192.168.1.5:8080/api/user";
+  const BASE_URL = "http://10.1.9.195:8080/api/user";
 
   const fetchWithTimeout = async (url, options, timeout = 10000) => {
     const controller = new AbortController();
@@ -195,8 +195,8 @@ export default function LoginScreen() {
               <MaterialIcons name="info-outline" size={18} color="#007AFF" />
               <View style={styles.infoTextContainer}>
                 <Text style={styles.infoLabel}>Demo Credentials:</Text>
-                <Text style={styles.infoValue}>NIM: 0325260031</Text>
-                <Text style={styles.infoValue}>Password: 123456</Text>
+                <Text style={styles.infoValue}>NIM: 0320240040</Text>
+                <Text style={styles.infoValue}>Password: 100406</Text>
               </View>
             </View>
           </View>

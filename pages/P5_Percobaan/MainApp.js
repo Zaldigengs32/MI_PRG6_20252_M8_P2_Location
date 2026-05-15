@@ -13,6 +13,7 @@ import HistoryScreen from './HistoryScreen';
 import DetailScreen from './DetailScreen';
 import AboutScreen from './AboutScreen';
 import LocationScreen from './LocationScreen';
+import PresensiScreen from './PresensiScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -28,6 +29,9 @@ ProfileTabIcon.propTypes = { color: PropTypes.string.isRequired };
 
 const LocationTabIcon = ({ color }) => <MaterialIcons name="location-on" size={24} color={color} />;
 LocationTabIcon.propTypes = { color: PropTypes.string.isRequired };
+
+const PresensiTabIcon = ({ color }) => <MaterialIcons name="qr-code-scanner" size={24} color={color} />;
+PresensiTabIcon.propTypes = { color: PropTypes.string.isRequired };
 
 function HistoryStack() {
   return (
@@ -79,6 +83,14 @@ function MainTabs() {
         options={{
           tabBarLabel: 'Lokasi',
           tabBarIcon: LocationTabIcon
+        }}
+      />
+      <Tab.Screen
+        name="PresensiTab"
+        component={PresensiScreen}
+        options={{
+          tabBarLabel: 'Presensi',
+          tabBarIcon: PresensiTabIcon
         }}
       />
     </Tab.Navigator>

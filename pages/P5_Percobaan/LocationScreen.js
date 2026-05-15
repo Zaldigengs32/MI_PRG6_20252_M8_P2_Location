@@ -11,7 +11,7 @@ import MapView, { Marker } from "react-native-maps";
 import * as Location from "expo-location";
 import axios from "axios";
 
-const BASE_URL = "http://192.168.1.5:8080/api/presensi";
+const BASE_URL = "http://10.1.9.195:8080/api/presensi";
 
 export default function LocationScreen() {
   const [loading, setLoading] = useState(true);

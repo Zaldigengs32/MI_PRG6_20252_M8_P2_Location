@@ -24,7 +24,7 @@ const HomeScreen = ({ navigation }) => {
 
   const [permission, requestPermission] = useCameraPermissions();
 
-  const BASE_URL = "http://192.168.1.5:8080/api/presensi";
+  const BASE_URL = "http://10.1.9.195:8080/api/presensi";
 
   const attendanceStats = useMemo(() => {
     return { totalPresent: 12, totalAbsent: 2 };
